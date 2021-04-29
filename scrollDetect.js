@@ -11,12 +11,14 @@ window.addEventListener("scroll", (e) => {
 
 //Functions
 function testScrollPosition() {
-    if(window.scrollY <= 0) {
-        //Page Scrolled All The Way Up
-        nav.style.backgroundColor = "";
-    } else {
-        //Page Not Scrolled At The Top
-        nav.style.backgroundColor = "#008FDB";
+    if(screen.width > 555) {
+        if(window.scrollY <= 0) {
+            //Page Scrolled All The Way Up
+            nav.style.backgroundColor = "";
+        } else {
+            //Page Not Scrolled At The Top
+            nav.style.backgroundColor = "#008FDB";
+        }
     }
 }
 
@@ -31,7 +33,7 @@ function myScroll(section) {
         document.querySelector("#social").scrollIntoView(true);
     }
     var maxScroll = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    if(window.scrollY && maxScroll != window.scrollY) {
+    if(window.scrollY && maxScroll != window.scrollY && screen.width > 555) {
         window.scroll(0, scrollY - 89);
     }
 }
