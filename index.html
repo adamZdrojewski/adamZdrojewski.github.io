@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+    <head>
+        <title>Adam Zdrojewski</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="mainStyle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <nav>
+            <a class="navLink" href="#home">HOME</a>
+            <a class="navLink" href="#aboutMe">ABOUT</a>
+            <a class="navLink" href="#projects">PROJECTS</a>
+            <a class="navLink" href="#social">SOCIAL</a>
+        </nav>
+        <header>
+            <div class="home">
+                <div class="homeLeft">
+                    <h1>Adam Zdrojewski</h1>
+                    <h2>All About Me!</h2>
+                </div>
+                <div class="homeRight">
+                    <img src="img/face.jpg">
+                </div>
+            </div>
+            <p class="mainBio">My name is Adam Zdrojewski and I am a first year student at the University of Cincinnati in the IT program.  I enjoy playing the violin, mixing sound for live theater, and tinkering with technology.  I got interested in web development after taking a web development class in high school.</p>
+        </header>
+        <main>
+            <div class="aboutMe" id="aboutMe">
+                <div class="aboutMeContainer">
+                    <h3>About Me</h3>
+                    <div class="twoCol">
+                        <div class="twoColTitle">
+                            <h4>Work Experience</h4>
+                        </div>
+                        <div class="twoColContent workExperience">
+                            <ul>
+                                <li>
+                                    <h5>Kings Island Games Department Supervisor</h5>
+                                    <ul>
+                                        <li class="jobDesc">Oversees the daily operation of about 3-5 games. Manages about 30 employees overall, making sure they have the resources to do their job efficiently. Also deals with any issues that might arise with a customer that the employee can not handle.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h5>Kings Island Games Department Associate</h5>
+                                    <ul>
+                                        <li class="jobDesc">Runs assigned game for a day. Interacts with customers and works to satisfy their needs.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h5>Cedar Point Ride Operator</h5>
+                                    <ul>
+                                        <li class="jobDesc">Performed mandatory checks to ensure guest safety. Interacted with guests to ensure a positive experience.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="twoCol">
+                        <div class="twoColTitle">
+                            <h4>My Hobbies</h4>
+                        </div>
+                        <div class="twoColContent hobbies">
+                            <ul>
+                                <li>Programming</li>
+                                <li>Mixing Sound For Live Theater</li>
+                                <li>Playing The Violin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects" id="projects">
+                <div class="projectsContainer">
+                    <h3>Projects</h3>
+                    <div class="twoCol">
+                        <div class="left">
+                            <h4>Fadebot</h4>
+                            <p>Fadebot is a bot for Discord that plays music inside of a voice channel.  The cool thing about this music bot though is that it uses a website to request songs and manage the queue.  The website also has a playlist editor so that the bot can auto-dj.  I designed and wrote the website portion of the project using JavaScript and a few PHP scripts.  This interacted with a Google Firestore database.</p>
+                        </div>
+                        <div class="right imgTwoCol">
+                            <img src="img/fadebot.png" alt="screenshot of Fadebot home page">
+                        </div>
+                    </div>
+                    <div class="twoCol">
+                        <div class="left zhubLeft">
+                            <img src="img/zhubEvents.png" alt="screenshot of ZHub website events page">
+                            <img src="img/zhubTasks.png" alt="screenshot of ZHub website tasks page">
+                        </div>
+                        <div class="right">
+                            <h4>ZHub</h4>
+                            <p>ZHub is a website that me and my family use to keep track of our calendars and to-do lists.  The general concept and layout of the site is based off of the Carnival Hub App from the cruise line.  This was the first site that I made using Vue.js.  The website also communicates with a Google Firestore database.</p>
+                        </div>
+                    </div>
+                    <div class="twoCol">
+                        <div class="left">
+                            <h4>Jungle Cruise</h4>
+                            <p>Jungle Cruise is a mini-game that I wrote that is based off of the Jungle Cruise board game from Disney.  I re-designed the game to work in a similar style to the ones made by Jackbox Games.  I wrote the game in JavaScript and used Electron to make it into a windows app.  That program consisted of the main display screen and it also ran an http server to serve the mobile website to the players.  Finally, I tied it all together with socket.io so that the mobile devices could communicate with the socket.io server running on the main program.</p>
+                        </div>
+                        <div class="right imgTwoCol">
+                            <img src="img/jungleCruise.png" alt="screenshot of Jungle Cruise game">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social" id="social">
+                <div class="socialContainer">
+                    <h3>Find Me On...</h3>
+                    <div class="row">
+                        <a href="https://github.com/adamZdrojewski" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/adam-zdrojewski-1851a31a1/" target="_blank">LinkedIn</a>
+                        <a href="documents/resume.pdf" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Site created by Adam Zdrojewski | <a href="https://github.com/adamZdrojewski/adamZdrojewski.github.io" target="_blank">Source Code</a></p>
+        </footer>
+
+        <script src="scrollDetect.js"></script>
+    </body>
+</html>
