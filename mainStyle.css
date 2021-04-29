@@ -241,6 +241,10 @@ header {
     width:49%;
 }
 
+.projects a {
+    color:white;
+}
+
 /* Social */
 .social {
     background-color:white;

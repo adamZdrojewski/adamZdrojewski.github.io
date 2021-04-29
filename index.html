@@ -5,19 +5,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="mainStyle.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="img/icon16x16.png" type="image/png" sizes="16x16">
     </head>
     <body>
         <nav>
-            <a class="navLink" href="#home">HOME</a>
-            <a class="navLink" href="#aboutMe">ABOUT</a>
-            <a class="navLink" href="#projects">PROJECTS</a>
-            <a class="navLink" href="#social">SOCIAL</a>
+            <a class="navLink" onclick="myScroll('home');">HOME</a>
+            <a class="navLink" onclick="myScroll('aboutMe');">ABOUT</a>
+            <a class="navLink" onclick="myScroll('projects');">PROJECTS</a>
+            <a class="navLink" onclick="myScroll('social');">SOCIAL</a>
         </nav>
         <header>
             <div class="home">
                 <div class="homeLeft">
                     <h1>Adam Zdrojewski</h1>
-                    <h2>All About Me!</h2>
+                    <h2></h2>
                 </div>
                 <div class="homeRight">
                     <img src="img/face.jpg">
@@ -58,7 +59,7 @@
                     </div>
                     <div class="twoCol">
                         <div class="twoColTitle">
-                            <h4>My Hobbies</h4>
+                            <h4>Hobbies</h4>
                         </div>
                         <div class="twoColContent hobbies">
                             <ul>
@@ -76,7 +77,7 @@
                     <div class="twoCol">
                         <div class="left">
                             <h4>Fadebot</h4>
-                            <p>Fadebot is a bot for Discord that plays music inside of a voice channel.  The cool thing about this music bot though is that it uses a website to request songs and manage the queue.  The website also has a playlist editor so that the bot can auto-dj.  I designed and wrote the website portion of the project using JavaScript and a few PHP scripts.  This interacted with a Google Firestore database.</p>
+                            <p>Fadebot is a bot for Discord that plays music inside of a voice channel.  The cool thing about this music bot though is that it uses a website to request songs and manage the queue.  The website also has a playlist editor so that the bot can auto-dj.  I designed and wrote the website portion of the project using JavaScript and a few PHP scripts.  This interacted with a Google Firestore database.  I worked on this project with <a href="https://christiankahle.github.io/digital-portfolio/" target="_blank">Christian Kahle</a>, who wrote the actual bot.</p>
                         </div>
                         <div class="right imgTwoCol">
                             <img src="img/fadebot.PNG" alt="screenshot of Fadebot home page">
